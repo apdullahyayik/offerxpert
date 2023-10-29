@@ -164,7 +164,20 @@ report` is printed.
 
 ## Results
 
-## Future Work
+**Training report**
 
+<img src="models/experiment-default/train_report.png" alt="train_report.png" width="300">
 
+**Confusion Matrix**
 
+<img src="models/experiment-default/cm.png" alt="cm.png" width="300" height="200">
+
+**Classification Report**
+
+|              | Precision | Recall | F1-Score | Support |
+|--------------|-----------|--------|----------|---------|
+| 0            | 0.00      | 0.00   | 0.00     | 0       |
+| 1            | 1.00      | 0.63   | 0.77     | 3542    |
+| Accuracy     |           |        | 0.63     | 3542    |
+| Macro Avg    | 0.50      | 0.32   | 0.39     | 3542    |
+| Weighted Avg | 1.00      | 0.63   | 0.77     | 3542    |
