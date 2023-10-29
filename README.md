@@ -110,7 +110,9 @@ motivated by 3 key factors:
    the feasibility of a Proof of Concept (POC).
 
 [1] See pioneering paper: https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf
+
 [2] Microsoft Research: https://www.microsoft.com/en-us/research/project/dssm/
+
 [3] GloVE paper: https://nlp.stanford.edu/pubs/glove.pdf
 
 `build-model` command is in charge of building model. An example usage is as
