@@ -1,0 +1,14 @@
+{
+  "default": true,
+  "MD003": {
+    "style": "atx"
+  },
+  "no-hard-tabs": true,
+  "ol-prefix": {
+    "style": "ordered"
+  },
+  "MD013": {
+    "line_length": 88
+  },
+  "link-fragments": false
+}
