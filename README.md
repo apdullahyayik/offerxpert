@@ -166,11 +166,11 @@ report` is printed.
 
 **Training report**
 
-<img src="models/experiment-default/train_report.png" alt="train_report.png" width="300">
+<img src="models/experiment-default/train_report.png" alt="train_report.png" width="400">
 
 **Confusion Matrix**
 
-<img src="models/experiment-default/cm.png" alt="cm.png" width="300" height="200">
+<img src="models/experiment-default/cm.png" alt="cm.png" width="400" height="300">
 
 **Classification Report**
 
