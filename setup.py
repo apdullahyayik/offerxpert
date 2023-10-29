@@ -73,6 +73,7 @@ setup(
         "scikit-learn",
         "torch",
         "tqdm",
+        "pytest",
     ],
     extras_require={
         "dev": [
