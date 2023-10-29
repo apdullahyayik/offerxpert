@@ -1,4 +1,4 @@
-# 🌻💬 OfferXpert
+# 🛍️ OfferXpert
 
 A simple product matcher for a given offer.
 

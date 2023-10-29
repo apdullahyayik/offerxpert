@@ -14,7 +14,7 @@ DESCRIPTION = """Description"""
 
 def main():
     """Handle CLI arguments."""
-    print("🌻💬 OfferXpert!")
+    print("🛍️ OfferXpert!")
     create_parser(
         DESCRIPTION,
         VERSION,
