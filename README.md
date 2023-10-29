@@ -58,6 +58,11 @@ execution is exemplified as follows:
 offerexpert check-data --experiment-folder <insert path to result folder>
 ```
 
+**Number of offers by product**
+
+<img src="models/experiment-default/analyse_offer_by_product.png" alt="Number of
+offers by product" width="400">
+
 ## Data Processing
 
 The `data.processor` package is in charge of data processing, with each module
@@ -166,11 +171,13 @@ report` is printed.
 
 **Training report**
 
-<img src="models/experiment-default/train_report.png" alt="train_report.png" width="400">
+<img src="models/experiment-default/train_report.png" alt="train_report.png"
+width="400">
 
 **Confusion Matrix**
 
-<img src="models/experiment-default/cm.png" alt="cm.png" width="400" height="300">
+<img src="models/experiment-default/cm.png" alt="cm.png" width="400"
+height="300">
 
 **Classification Report**
 
