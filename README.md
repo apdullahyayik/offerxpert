@@ -152,7 +152,7 @@ offerexpert build-model
 Once the training is finished, following files are saved under the
 `experiment-folder/experiment-name`:
 
-- `model.pt`: Pytorch model itself.
+- `model.pt`: Pytorch model itself (git-lfs).
 - `train_report.png`: This image displays train and validation/test loss over
   epochs.
 - `train_history.csv`: This CSV file contains values for train and
@@ -161,7 +161,7 @@ Once the training is finished, following files are saved under the
   instances.
 - `faiss-indexer.bin`: Indexed product vectors that are outputs from `model.pt`.
   This index will be used for efficient searching the most similar product for a
-  given offer vector query.
+  given offer vector query (git-lfs).
 
 Besides, the generic `classification history` of `sklearn` is being printed.
 
