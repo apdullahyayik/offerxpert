@@ -29,7 +29,7 @@ An example demonstrating the system's usage for end-users is provided within the
 
 ## Installation
 
-The environmental variable denoted as `PATH_DATA` should be configured to
+The environmental variable denoted as `OFFER_EXPERT_PATH_DATA` should be configured to
 specify the directory in which the files `offer.json` and `product.json` are
 stored.
 
