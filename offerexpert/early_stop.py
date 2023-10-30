@@ -1,4 +1,13 @@
 """Module for early stopping."""
+import logging
+import sys
+
+logging.basicConfig(
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    datefmt="%d-%b-%y %H:%M:%S",
+    stream=sys.stdout,
+    level=logging.INFO,
+)
 
 
 class EarlyStop:
@@ -35,7 +44,7 @@ class EarlyStop:
 
         self._is_improvement = False
         self._patience -= 1
-        print(f"patience status: {self._patience} / {self._patience_reset}")
+        logging.info("patience status: %s/%s", self._patience, self._patience_reset)
         return self._patience != 0
 
     def _reset(self):
