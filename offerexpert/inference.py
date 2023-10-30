@@ -34,7 +34,7 @@ class Inference:
             artefact_folder (Path): The model file.
 
         Returns:
-            AldrinModel: The initialized model.
+            Inference: The initialized model.
         """
         model = OfferExpertModel(vector_size=300)
         model.load_state_dict(torch.load(artefact_folder / "model.pt"))
