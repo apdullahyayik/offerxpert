@@ -41,7 +41,14 @@ To facilitate the installation of the necessary libraries, it is advised to
 execute the subsequent command:
 
 ```shell
+git clone https://github.com/apdullahyayik/offerxpert.git
 pip install .
+```
+
+Make sure that unit-tests are passed after running the following command:
+
+```shell
+pytest tests
 ```
 
 In the upcoming sections, comprehensive details will be provided pertaining to
