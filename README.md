@@ -34,7 +34,7 @@ specify the directory in which the files `offer.json` and `product.json` are
 stored.
 
 ```shell
-export PATH_DATA=<insert path to data folder>
+export OFFER_EXPERT_PATH_DATA=<insert path to data folder>
 ```
 
 To facilitate the installation of the necessary libraries, it is advised to
