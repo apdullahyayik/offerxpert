@@ -2,10 +2,7 @@
 import torch
 from sentence_transformers import SentenceTransformer
 
-# _MODEL_NAME = "paraphrase-MiniLM-L6-v2"
 _MODEL_NAME = "average_word_embeddings_glove.840B.300d"
-# _MODEL_NAME = "sentence-transformers/gtr-t5-base"
-# _MODEL_NAME = "all-MiniLM-L12-v2"
 sentence_transformer = SentenceTransformer(_MODEL_NAME)
 
 
