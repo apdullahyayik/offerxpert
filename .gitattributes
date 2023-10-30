@@ -1,0 +1,4 @@
+models/experiment-default/faiss-indexer.bin filter=lfs diff=lfs merge=lfs -text
+models/experiment-default/model.pt filter=lfs diff=lfs merge=lfs -text
+models/experiment-default/offer_ids_test_positive filter=lfs diff=lfs merge=lfs -text
+models/experiment-default/prod_ids_test_positive filter=lfs diff=lfs merge=lfs -text

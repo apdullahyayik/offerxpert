@@ -86,7 +86,14 @@ def build_data(
 
     df_dataset = prepare_data(n_neg_sample)
     logging.info("Prepared data")
-    X_train, X_test, y_train, y_test = split_into_train_test(df_dataset)
+    X_train, X_test, y_train, y_test = split_into_train_test(df_dataset)  # noqa
+    logging.info(
+        "Len train instances: %s (%s) - Len test instances: %s (%s).",
+        y_train.shape[0],
+        "/".join([str(val) for val in list(y_train.value_counts().to_dict().values())]),
+        y_test.shape[0],
+        "/".join([str(val) for val in list(y_test.value_counts().to_dict().values())]),
+    )
 
     product_train_vector = create_sentence_transformer_vectors(
         X_train["product"].to_list(), batch_size_process
