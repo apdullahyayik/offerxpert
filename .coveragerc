@@ -2,4 +2,4 @@
 branch = False
 
 [report]
-omit = botanic/version.py
+omit = offerexpert/version.py
