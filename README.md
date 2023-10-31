@@ -27,11 +27,11 @@ product.
 An example demonstrating the system's usage for end-users is provided within the
 `notebooks/example_inference` notebook.
 
-## Installation
+## 📦 Installation
 
-The environmental variable denoted as `OFFER_EXPERT_PATH_DATA` should be configured to
-specify the directory in which the files `offer.json` and `product.json` are
-stored.
+The environmental variable denoted as `OFFER_EXPERT_PATH_DATA` should be
+configured to specify the directory in which the files `offer.json` and
+`product.json` are stored.
 
 ```shell
 export OFFER_EXPERT_PATH_DATA=<insert path to data folder>
@@ -55,7 +55,21 @@ In the upcoming sections, comprehensive details will be provided pertaining to
 data analysis, data processing, negative sampling, model building, indexing,
 search operations, and results.
 
-## Data Analysis
+## 🎯 Quickstart
+
+```python
+from offerexpert.inference import Inference
+from pathlib import Path
+
+path_model_dir = Path(".models/experiment_default")
+model_inference = Inference.load_model()
+product_id = model_inference(
+    text="xiaomi pocophone f1 global version 6.18 inch 6gb 128gb snapdragon 845 octa core 4g smartphone",
+    top_n=1)
+print(product_id)
+```
+
+## 📊 Data Analysis
 
 The `check-data` command has the responsibility for the analysis of data,
 employing the underlying functionality of `data.analyse`. An illustrative
@@ -65,7 +79,7 @@ execution is exemplified as follows:
 offerexpert check-data --experiment-folder <insert path to result folder>
 ```
 
-**Number of offers by product** 
+**Number of offers by product**
 
 <img src="models/experiment-default/analyse_offer_by_product.png" alt="Number of
 offers by product" width="400">
@@ -73,14 +87,14 @@ offers by product" width="400">
 In this graph, distribution of number of positively verified offer by product is
 displayed.
 
-## Data Processing
+## 🧮 Data Processing
 
 The `data.processor` package is in charge of data processing, with each module
 responsible for a specific field. The final step in this process, combining
 processed textual features for both offers and products, is executed by the
 `combine_offer_and_product_features.py` module.
 
-### Negative Sampling
+### 🔲➖ Negative Sampling
 
 `data.sampler` package is in charge of sampling both positive and negative
 instances. Positive offers associated with products are sampled based on the
@@ -89,7 +103,7 @@ information contained within the `positivelyVerifiedOfferNames` field in the
 number, denoted as 'N,' of negative samples are generated. The utilization of
 this hyperparameter 'N' will be elucidated in subsequent sections.
 
-## Model Building
+## 🛠️ Model Building
 
 The `modelling` module is responsible for constructing the retrieval phase of
 the project. Additionally, the `trainer` module is tasked with implementing the
@@ -165,7 +179,7 @@ Once the training is finished, following files are saved under the
 
 Besides, the generic `classification history` of `sklearn` is being printed.
 
-## Evaluation
+## 🧐 Evaluation
 
 `evaluation` command is in charge of evaluation of the model. An example command
 is as follows:
@@ -179,7 +193,7 @@ within the specified `experiment-folder/experiment-name` directory are loaded.
 Subsequently, a confusion matrix is generated and saved, and a `classification
 report` is printed.
 
-## Results
+## 📝 Results
 
 The following command is executed to get results:
 
